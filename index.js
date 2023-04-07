@@ -1,15 +1,22 @@
-'use strict';
+var express = require('express');
+var app = express();
 
-var fs = require('fs');
-var path = require('path');
+app.get('/', function (req, res) {
+    res.send('<html><body><h1>Hello World</h1></body></html>');
+});
 
-exports.get = function(event, context, callback) {
-  var contents = fs.readFileSync(`public${path.sep}index.html`);
-  var result = {
-    statusCode: 200,
-    body: contents.toString(),
-    headers: {'content-type': 'text/html'}
-  };
+app.post('/submit-data', function (req, res) {
+    res.send('POST Request');
+});
 
-  callback(null, result);
-};
+app.put('/update-data', function (req, res) {
+    res.send('PUT Request');
+});
+
+app.delete('/delete-data', function (req, res) {
+    res.send('DELETE Request');
+});
+
+var server = app.listen(5000, function () {
+    console.log('Node server is running..');
+});
