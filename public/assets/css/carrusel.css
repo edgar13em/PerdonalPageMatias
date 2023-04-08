@@ -2,7 +2,8 @@
 
 #carrusel {
     float:left;
-    width:600px;
+    position: center;
+    width:500px;
     overflow:hidden;
     height:203px;
     position:relative;
