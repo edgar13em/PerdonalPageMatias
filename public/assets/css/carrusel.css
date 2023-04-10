@@ -5,7 +5,7 @@
     position: center;
     width:500px;
     overflow:hidden;
-    height:203px;
+    height:503px;
     position:relative;
     margin-top:20px;
     margin-bottom:20px;
@@ -15,16 +15,18 @@
     position:absolute;
     left:10px;
     z-index:1;
-    top:50%;
+    top:30%;
     margin-top:-9px;
+    opacity: .5;
 }
  
 #carrusel .right-arrow {
     position:absolute;
     right:10px;
     z-index:1;
-    top:50%;
+    top:30%;
     margin-top:-9px;
+    opacity: .5
 }
  
 .carrusel {
@@ -36,9 +38,9 @@
  
 .carrusel>div {
     float: left;
-    height: 203px;
+    height: 503px;
     margin-right: 5px;
-    width: 195px;
+    width: 505px;
     text-align:center;
 }
  
